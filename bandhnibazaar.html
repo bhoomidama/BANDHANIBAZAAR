@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandhnibazaar - Authentic Indian Sarees</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefce8; /* Light yellow/cream background */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation Bar -->
+        <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-3xl font-extrabold text-red-800">Bandhnibazaar</a>
+                <div class="space-x-6 hidden md:flex">
+                    <a href="#hero" class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="#collection" class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200">Collection</a>
+                    <a href="#about-bandhni" class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200">About Bandhni</a>
+                    <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200">Contact</a>
+                </div>
+                <!-- Mobile Menu Button (Hamburger Icon) -->
+                <button class="md:hidden text-gray-700 hover:text-red-600 focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden bg-amber-50 mt-2 rounded-lg shadow-lg py-2">
+                <a href="#hero" class="block px-4 py-2 text-gray-700 hover:bg-amber-200">Home</a>
+                <a href="#collection" class="block px-4 py-2 text-gray-700 hover:bg-amber-200">Collection</a>
+                <a href="#about-bandhni" class="block px-4 py-2 text-gray-700 hover:bg-amber-200">About Bandhni</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-amber-200">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-gradient-to-r from-red-400 to-amber-500 h-96 flex items-center justify-center text-white text-center p-4 overflow-hidden">
+            <img src="https://placehold.co/1200x600/FF4500/FFFFFF?text=Vibrant+Bandhni+Saree" alt="Vibrant Bandhni Saree Background" class="absolute inset-0 w-full h-full object-cover opacity-70">
+            <div class="relative z-10 p-4">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
+                    Experience the Art of Bandhni Sarees
+                </h1>
+                <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-8 drop-shadow">
+                    Handcrafted tie-dye masterpieces, bringing tradition and elegance to your wardrobe.
+                </p>
+                <a href="#collection" class="bg-white text-red-700 hover:bg-red-100 px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Explore Our Collection
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Collection Section -->
+        <section id="collection" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-red-800 mb-10">Our Exquisite Collection</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Saree Card 1 -->
+                    <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/gaji2.jpg" alt="Gaji Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-red-700 mb-2">Classic Gaji Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">A timeless piece with intricate patterns.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 7,500</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Saree Card 2 -->
+                    <div class="saree-card bg-amber-50 rounded-xl shadow-lg overf45w-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/silk.jpg" alt="Bandhani Silk Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-yellow-700 mb-2">Sunshine Silk Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">Bright and cheerful, perfect for festivities.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 6,800</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Saree Card 3 -->
+                    <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/cotton2.jpg" alt="Cotton Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-2">Pure Cotton Bandhani </h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">Elegant and sophisticated for occasions.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 3,200</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Saree Card 4 -->
+                    <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/gharchola3.jpg" alt="Gharchola Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">Gharchola Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">A rich hue with traditional Bandhni dots.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 8,900</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+                     <!-- Saree Card 5 -->
+                     <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/lehriya.jpg" alt="Leheriya Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">Leheriya Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">Woven with Tradition,Styles with Waves.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 4,500</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+                     <!-- Saree Card 4 -->
+                     <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/shikari.jpg" alt="Shikari Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">Shikari Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">The art of the hunt, woven in Bandhani.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 7,900</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+                     <!-- Saree Card 4 -->
+                     <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/panetar.jpg" alt="Panetar Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">Panetar Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">Draped in Tradition, Adorned in Dream.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 9,999</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+                     <!-- Saree Card 4 -->
+                     <div class="saree-card bg-amber-50 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4">
+                        <img src="photos/ekdali.jpg" alt="Ekdali Bandhni Saree" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <div class="text-left">
+                            <h3 class="text-xl sm:text-2xl font-semibold text-purple-700 mb-2">Ekdali Bandhni</h3>
+                            <p class="text-gray-700 mb-2 text-sm sm:text-base">Draped in Heritage, Adorned with Ekdali.</p>
+                            <span class="text-2xl sm:text-3xl font-bold text-red-600">₹ 6,900</span>
+                            <button class="view-details-btn mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition-colors duration-200">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="mt-12 inline-block bg-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-red-800 transition-colors duration-300">
+                    View All Sarees
+                </a>
+            </div>
+        </section>
+
+        <!-- About Bandhni Section -->
+        <section id="about-bandhni" class="py-16 bg-amber-50">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <h2 class="text-3xl sm:text-4xl font-bold text-red-800 mb-10">The Art of Bandhni</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="photos/art.jpg" alt="Bandhni Craftsmanship" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 text-left">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Bandhni, also known as Bandhej, is a traditional tie-dye art form primarily practiced in Rajasthan and Gujarat, India. The word 'Bandhni' is derived from the Sanskrit word 'Banda', which means 'to tie'.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            This intricate process involves tying small knots on the fabric with thread, which resist the dye, creating beautiful patterns like dots, squares, waves, and stripes. Each Bandhni saree is a testament to the artisan's skill and dedication.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            At Bandhni Bliss, we bring you authentic, handcrafted Bandhni sarees, preserving this rich cultural heritage while offering contemporary designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Newsletter Section -->
+        <section id="newsletter" class="py-16 bg-red-100 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-red-800 mb-6">Stay Connected!</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                    Subscribe to our newsletter for exclusive offers, new arrivals, and insights into Bandhni art.
+                </p>
+                <form class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <input type="email" placeholder="Enter your email" class="p-3 rounded-full border border-red-300 focus:ring-2 focus:ring-red-400 focus:border-transparent transition duration-200 w-full sm:w-80">
+                    <button type="submit" class="bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-red-800 transition-colors duration-200 shadow-md w-full sm:w-auto">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-auto py-8 bg-red-800 text-white text-center" id="contact">
+           <!-- <div class="container mx-auto px-4">
+                <p>&copy; 2025 Bandhni Bliss. All rights reserved.</p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-white hover:text-red-200 transition-colors duration-200 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-white hover:text-red-200 transition-colors duration-200 text-sm">Terms of Service</a>
+                </div>
+            </div>
+        --><div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
